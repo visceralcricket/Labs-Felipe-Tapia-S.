@@ -15,18 +15,20 @@ Ejercicios sobre el uso de Listas y Pilas
 
 2. El laboratorio **debe desarrollarse íntegramente en su cuenta personal de Replit**, **con el autocompletado basado en IA desactivado**.
 
-3. Solo está permitido modificar el archivo `exercises.c` y no está permitido utilizar comandos Git.
+   Vea [**AQUI**](https://chartreuse-goal-d5c.notion.site/Como-desactivar-llenado-autom-tico-de-repl-it-31ad965dc59e80b7b05bd02ae7970fdb?source=copy_link) como desactivar el autocompletado.
 
-4. **No está permitido copiar bloques de código de fuentes externas**.
+4. Solo está permitido modificar el archivo `exercises.c` y no está permitido utilizar comandos Git.
 
-5. Para ejecutar los tests, abra la terminal (Shell) en Replit y ejecute:
+5. **No está permitido copiar bloques de código de fuentes externas**.
+
+6. Para ejecutar los tests, abra la terminal (Shell) en Replit y ejecute:
 
    ```bash
    bash test.sh
    ```
-6. Debe ejecutar los tests **luego de terminar cada ejercicio**.
+7. Debe ejecutar los tests **luego de terminar cada ejercicio**.
 
-7. Al finalizar, adjunte en el aula virtual:
+8. Al finalizar, adjunte en el aula virtual:
 
    * La URL de su repositorio GitHub (con los cambios actualizados).
    * El *join link* de su proyecto en Replit.
