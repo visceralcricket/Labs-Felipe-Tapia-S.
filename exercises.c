@@ -42,12 +42,12 @@ Al finalizar retorna la lista creada.
 */
 List* crea_lista() {
    List* L = create_list();
-   /*
+   
    int valores[10];
    for(int i=0; i<10; i++) {
       valores[i]=i+1;
       pushBack(L, &valores[i]);  
-   } */
+   }
    return L;
 }
 
@@ -60,12 +60,12 @@ retorne la suma de sus elementos.
 int sumaLista(List *L) {
    
    int sumaTotal = 0;
-   /*
+   
    int* valor = first(L);
    while(valor!=NULL) {
       sumaTotal+=(*valor);
       valor = next(L);
-   } */
+   }
    return sumaTotal;
 }
 
