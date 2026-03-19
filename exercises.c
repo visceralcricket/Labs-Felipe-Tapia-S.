@@ -42,9 +42,11 @@ Al finalizar retorna la lista creada.
 */
 
 List* crea_lista() {
-   List* L = create_list();(
-   for(int i=1; i<=10; 1++) { // Comenzar a llenar la lista con un ciclo for desde 1 hasta 10.
-      int* dato = (int *) malloc(sizeof(int));
+   List* L = create_list();
+   int valores[10];
+   for(int i=0; i<=10; i++) {
+      valores[i]=i+1;
+      pushBack(L, &valores[i]);  
    }
    return L;
 }
@@ -56,9 +58,12 @@ retorne la suma de sus elementos.
 */
 int sumaLista(List *L) {
 
-   int sumaTotal = 0;
-   for(int i=0; i<L->current->data; i++) {
-      sumaTotal += L->current->data;
+   int sumaTotal = 0, totalSize = get_size(L);
+   int *valor;
+   for(int i=0; i<totalSize; i++) {
+      valor=first(L);
+      sumaTotal+= (*valor);
+      next(L);
    }
    return sumaTotal;
 }
@@ -73,9 +78,12 @@ posiciona en el elemento anterior.
 */
 
 void eliminaElementos(List*L, int elem){
-
-   for(int i=0; i<L->current->data; i++) {
-      if(L->current->data == elem) popCurrent(L);
+   int totalSize = get_size(L);
+   for(int i=0; i<totalSize; i++) {
+      if(L->current->data==elem) {
+         popCurrent(L);
+      }
+      else L->current=next(L);
    }
 }
 
@@ -90,6 +98,7 @@ void copia_pila(Stack* P1, Stack* P2) {
 
    Stack* P3 = create_stack(); // <- Pila auxiliar (P3)
 }
+
 
 /*
 Ejercicio 5.
