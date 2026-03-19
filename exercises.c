@@ -97,7 +97,6 @@ Puedes usar una pila auxiliar.
 */
 
 void copia_pila(Stack* P1, Stack* P2) {
-   printf("f\n");
    //Stack* auxiliar = create_stack(); // <- Pila auxiliar (P3)
    
 }
@@ -113,6 +112,9 @@ paraéntesis balanceados. Retorna 1 si están balanceados,
 int parentesisBalanceados(char *cadena) {
 
    int balanceo = 0;
+   // char parentesisAbiertos[3] = {'(', '[', '{'};
+   // char parentesisCerrados[3] = {')', ']', '}'};
+   
    for(int i=0; cadena[i]!='\0'; i++) {
       if(cadena[i]=='(') balanceo++;
       else if(cadena[i]==')') balanceo--;
