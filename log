@@ -16,3 +16,14 @@ Thu Mar 19 07:59:39 PM UTC 2026:
  tests:  6|2
 total_score: 50/70
 e2a554c
+Thu Mar 19 08:00:59 PM UTC 2026: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘copia_pila’:
+exercises.c:100:11: error: unused variable ‘auxiliar’ [-Werror=unused-variable]
+  100 |    Stack* auxiliar = create_stack(); // <- Pila auxiliar (P3)
+      |           ^~~~~~~~
+cc1: all warnings being treated as errors
+79d84d4
