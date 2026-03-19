@@ -27,3 +27,9 @@ exercises.c:100:11: error: unused variable ‘auxiliar’ [-Werror=unused-variab
       |           ^~~~~~~~
 cc1: all warnings being treated as errors
 79d84d4
+Thu Mar 19 08:01:58 PM UTC 2026: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  6|2
+total_score: 50/70
+0e646f3
